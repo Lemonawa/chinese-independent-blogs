@@ -21,7 +21,7 @@ for line in lines[1:]:
     if len(parts) != 4:
         continue
     parts = [part.strip() for part in parts]
-    
+
     if parts[2]:
         content += ITEM.format(title=quoteattr(parts[0]), link=quoteattr(parts[1]), rss_link=quoteattr(parts[2]))
 
